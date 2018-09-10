@@ -67,9 +67,5 @@ Busy is an MIT-licensed open source project. It's an independent project with it
 [@buzzbeergeek](https://busy.org/@buzzbeergeek)
 [@timcliff](https://busy.org/@timcliff)
 
-## Partners
-
-[![](https://res.cloudinary.com/hpiynhbhq/image/upload/v1507199425/hevqheh9nltx0dfbuvo8.png)](https://crowdin.com/project/busy)  
-[![](https://res.cloudinary.com/hpiynhbhq/image/upload/v1507199050/fqxowyhiwlj9vhb5wdue.png)](https://www.browserstack.com/)
 
 [contributing]: ./docs/CONTRIBUTING.md
