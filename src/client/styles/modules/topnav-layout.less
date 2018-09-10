@@ -1,0 +1,170 @@
+@import (reference) './variables.less';
+
+.flex-box {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.item-align-start {
+  align-items: flex-start;
+}
+.item-align-end {
+  align-items: flex-end;
+}
+.item-align-center {
+  align-items: center;
+}
+.item-align-stretch {
+  align-items: stretch;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-self-stretch {
+  align-self: stretch;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.flex-4 {
+  flex: 4;
+}
+.flex-inherit {
+  flex: inherit;
+}
+
+.topnav-layout {
+  position: relative;
+  margin: 0 auto;
+  max-width: @container-width;
+
+  .nav-left {
+    width: @left-width;
+    padding-left: 16px;
+
+    @media @small {
+      padding-left: @mobile-padding;
+    }
+
+    @media @large {
+      padding-left: 0;
+    }
+  }
+
+  .nav-right {
+    // width: @right-width;
+    margin-right: 16px;
+    justify-content: flex-end;
+
+    @media @small {
+      display: block;
+      justify-content: initial;
+    }
+
+    @media @large {
+      margin-right: 0;
+    }
+    @media @medium-max {
+      display: flex;
+    }
+  }
+
+  .center {
+    width: calc(100% - 55px);
+    position: absolute;
+    display: none;
+    z-index: 1;
+
+    @media @small {
+      width: calc(100% - (@left-width + @right-width + 2 * @margin));
+      position: static;
+      margin-left: @left-width;
+      margin-right: @right-width + @margin;
+      display: block;
+    }
+
+    @media @medium {
+      width: calc(100% - (@left-width + @right-width + 4 * @margin));
+      margin-left: @left-width + 2 * @margin;
+    }
+
+    @media @large {
+      width: calc(100% - (@left-width + @right-width + 2 * @margin));
+      margin-left: @left-width + @margin;
+    }
+
+    &.mobileVisible {
+      display: block;
+    }
+  }
+}
+
+div[data-dir='rtl'] .topnav-layout {
+  .left {
+    right: 0;
+    padding-right: 16px;
+    padding-left: 0px;
+  }
+
+  .right {
+    right: unset;
+    left: 0;
+    margin-right: 0px;
+    margin-left: 16px;
+  }
+
+  .center {
+    @media @small {
+      margin-left: @right-width;
+      margin-right: @left-width + @margin;
+    }
+
+    @media @medium {
+      margin-left: 0;
+      margin-right: @left-width + 2 * @margin;
+    }
+
+    @media @large {
+      margin-left: 0;
+      margin-right: @left-width + @margin;
+    }
+
+    &.mobileVisible {
+      background-color: white;
+    }
+  }
+}
