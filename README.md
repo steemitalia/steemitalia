@@ -12,7 +12,7 @@ For more info: https://busy.org/@busy.org
 
 ## Preview
 
-![Preview](https://user-images.githubusercontent.com/16245250/35974135-6fe56d5a-0d0a-11e8-99f6-a90d59696f82.png)
+![Preview](https://i.imgur.com/1E7j85w.png)
 
 ## Quick Setup
 
