@@ -4,11 +4,11 @@
 [![Busy channel on Discord](https://img.shields.io/badge/chat-discord-738bd7.svg)](https://discord.gg/G95rNZs)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-# Steem Italia 🇮🇹
+# Steem Italia 
 
-Steem Italia is an Open Source social network and communications platform which extends itself to a variety of rich features and functionality including free digital payments and a marketplace for goods and services.
+Steem Italia is the platform of the Italian Steem Community.
 
-For more info: https://busy.org/@busy.org
+For more info: https://steemitalia.com/about
 
 ## Preview
 
@@ -27,7 +27,6 @@ yarn start
 ## Getting involved
 
 We at Steem Italia really appreciate help from the community. We want to make the Steem Italia project as friendly as possible to contributors. It doesn't matter if you are a beginner looking for a place to improve your skills or just want to help us build something great.
-If you would like to contribute, but don't know what to work on, check our [Contributing guide][contributing].
 
 ## Backers
 
