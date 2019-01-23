@@ -1,4 +1,0 @@
-cp comments/commentsActions-original.js comments/commentsActions.js
-cp comments/commentsReducer-original.js comments/commentsReducer.js
-cp feed/feedReducer-original.js feed/feedReducer.js
-cp post/postsReducer-original.js post/postsReducer.js
