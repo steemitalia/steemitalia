@@ -131,7 +131,7 @@ class Topnav extends React.Component {
         <Menu className="Topnav__menu-container__menu" mode="horizontal">
           <Menu.Item key="signup">
             <a target="_blank" rel="noopener noreferrer" href={process.env.SIGNUP_URL}>
-              <FormattedMessage id="iscriviti" defaultMessage="Iscriviti" />
+              <FormattedMessage id="signup" defaultMessage="Iscriviti" />
             </a>
           </Menu.Item>
           <Menu.Item key="divider" disabled>
@@ -139,7 +139,7 @@ class Topnav extends React.Component {
           </Menu.Item>
           <Menu.Item key="login">
             <a href={SteemConnect.getLoginURL(next)}>
-              <FormattedMessage id="accedi" defaultMessage="Accedi" />
+              <FormattedMessage id="login" defaultMessage="Accedi" />
             </a>
           </Menu.Item>
           <Menu.Item key="language">
@@ -408,15 +408,15 @@ class Topnav extends React.Component {
                   </Link>{' '}
                 </li>
                 <li>
-                  <Link className="nav-menu" to="/regole">
+                  <Link className="nav-menu" to="/faq">
                     {' '}
-                    REGOLE{' '}
+                    FAQ{' '}
                   </Link>{' '}
                 </li>
                 <li>
-                  <Link className="nav-menu" to="/about">
+                  <Link className="nav-menu" to="/tos">
                     {' '}
-                    ABOUT{' '}
+                    TOS{' '}
                   </Link>{' '}
                 </li>
               </ul>

@@ -63,7 +63,7 @@ class StoryFull extends React.Component {
 
   static defaultProps = {
     signature: null,
-    rewriteLinks: false,
+    rewriteLinks: true,
     pendingLike: false,
     pendingFlag: false,
     pendingFollow: false,

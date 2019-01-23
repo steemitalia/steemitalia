@@ -9,9 +9,7 @@ import { injectIntl } from 'react-intl';
 import uuidv4 from 'uuid/v4';
 import { getHtml } from '../../components/Story/Body';
 import improve from '../../helpers/improve';
-// import { extractImageTags, extractLinks } from '../../helpers/parser';
-import { extractLinks } from '../../helpers/parser';
-import { getContentImages } from '../../helpers/postHelpers';
+import { extractImageTags, extractLinks } from '../../helpers/parser';
 import { rewardsValues } from '../../../common/constants/rewards';
 import LastDraftsContainer from './LastDraftsContainer';
 import DeleteDraftModal from './DeleteDraftModal';
@@ -207,10 +205,7 @@ class Write extends React.Component {
 
     const parsedBody = getHtml(postBody, {}, 'text');
 
-    const images = getContentImages(parsedBody, true); // const images = _.map(extractImageTags, tag => tag.src);
-    // if (images.length & images[0].indexOf('https://steemitimages.com/') >= 0) {
-    //   images[0] = images[0].replace('https://steemitimages.com/', '').substr(4);
-    // }
+    const images = _.map(extractImageTags, tag => tag.src);
     const links = extractLinks(parsedBody);
 
     if (data.title && !this.permlink) {
@@ -223,7 +218,7 @@ class Write extends React.Component {
 
     let metaData = {
       community: 'SteemPostItalia',
-      app: `steemitalia/${version}`,
+      app: `SteemItalia/${version}`,
       format: 'markdown',
     };
 

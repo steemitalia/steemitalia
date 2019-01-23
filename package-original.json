@@ -1,6 +1,6 @@
 {
-  "name": "SteemItalia",
-  "version": "1.0.0",
+  "name": "busy",
+  "version": "2.4.0",
   "engines": {
     "node": ">=7.10.1",
     "npm": "=5.3.0"
@@ -59,6 +59,7 @@
     "embedjs": "^0.0.11",
     "express": "^4.15.4",
     "filesize": "^3.5.11",
+    "fsevents": "^1.2.4",
     "handlebars": "^4.0.11",
     "handlebars-intl": "^1.1.2",
     "history": "^4.6.3",

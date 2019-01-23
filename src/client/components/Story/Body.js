@@ -120,7 +120,7 @@ Body.defaultProps = {
   body: '',
   jsonMetadata: '',
   full: false,
-  rewriteLinks: false,
+  rewriteLinks: true,
 };
 
 export default Body;

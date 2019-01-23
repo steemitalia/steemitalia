@@ -146,11 +146,11 @@ const routes = [
         component: ExitPage,
       },
       {
-        path: '/regole',
+        path: '/faq',
         component: Faq,
       },
       {
-        path: '/about',
+        path: '/tos',
         component: About,
       },
       {

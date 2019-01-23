@@ -64,13 +64,13 @@ export default class Settings extends React.Component {
   static defaultProps = {
     reloading: false,
     locale: 'auto',
-    votingPower: 'auto',
+    votingPower: 'on',
     votePercent: 10000,
     loading: false,
     showNSFWPosts: false,
-    rewriteLinks: false,
+    rewriteLinks: true,
     useBeta: false,
-    upvoteSetting: true,
+    upvoteSetting: false,
     reload: () => {},
     saveSettings: () => {},
     notify: () => {},
@@ -86,7 +86,7 @@ export default class Settings extends React.Component {
     votingPower: 'auto',
     votePercent: 10000,
     showNSFWPosts: false,
-    rewriteLinks: false,
+    rewriteLinks: true,
   };
 
   componentWillMount() {

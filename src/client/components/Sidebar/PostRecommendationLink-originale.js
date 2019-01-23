@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { FormattedMessage, FormattedNumber, FormattedRelative } from 'react-intl';
 import { getFromMetadata } from '../../helpers/parser';
 import { getProxyImageURL } from '../../helpers/image';
-import { getContentImages } from '../../helpers/postHelpers'; // import { image } from '../../vendor/steemitLinks';
+import { image } from '../../vendor/steemitLinks';
 
 const PostRecommendationLink = ({ post, navigateToPost, navigateToPostComments }) => {
   const images = getFromMetadata(post.json_metadata, 'image');
@@ -15,9 +15,9 @@ const PostRecommendationLink = ({ post, navigateToPost, navigateToPostComments }
   if (images && firstImage) {
     imagePath = getProxyImageURL(firstImage, 'small');
   } else {
-    const contentImages = getContentImages(post.body); // const bodyImg = post.body.match(image());
-    if (contentImages.length) { // if (bodyImg && bodyImg.length) {
-      imagePath = getProxyImageURL(contentImages[0], 'small'); //  imagePath = getProxyImageURL(bodyImg[0], 'small');
+    const bodyImg = post.body.match(image());
+    if (bodyImg && bodyImg.length) {
+      imagePath = getProxyImageURL(bodyImg[0], 'small');
     }
   }
 

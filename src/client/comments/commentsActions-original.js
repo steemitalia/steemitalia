@@ -1,7 +1,6 @@
 import { createAction } from 'redux-actions';
 import { createCommentPermlink, getBodyPatchIfSmaller } from '../vendor/steemitHelpers';
 import { notify } from '../app/Notification/notificationActions';
-import { getPostKey } from '../helpers/stateHelpers';
 
 const version = require('../../../package.json').version;
 
@@ -22,19 +21,19 @@ export const LIKE_COMMENT_ERROR = '@comments/LIKE_COMMENT_ERROR';
 
 export const RELOAD_EXISTING_COMMENT = '@comments/RELOAD_EXISTING_COMMENT';
 export const reloadExistingComment = createAction(RELOAD_EXISTING_COMMENT, undefined, data => ({
-  commentId: getPostKey(data),
+  commentId: data.id,
 }));
 
 const getRootCommentsList = apiRes =>
   Object.keys(apiRes.content)
     .filter(commentKey => apiRes.content[commentKey].depth === 1)
-    .map(commentKey => getPostKey(apiRes.content[commentKey]));
+    .map(commentKey => apiRes.content[commentKey].id);
 
 const getCommentsChildrenLists = apiRes => {
   const listsById = {};
   Object.keys(apiRes.content).forEach(commentKey => {
-    listsById[getPostKey(apiRes.content[commentKey])] = apiRes.content[commentKey].replies.map(
-      childKey => getPostKey(apiRes.content[childKey]),
+    listsById[apiRes.content[commentKey].id] = apiRes.content[commentKey].replies.map(
+      childKey => apiRes.content[childKey].id,
     );
   });
 

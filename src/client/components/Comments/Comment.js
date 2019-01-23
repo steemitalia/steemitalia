@@ -52,7 +52,7 @@ class Comment extends React.Component {
   static defaultProps = {
     sort: 'BEST',
     sliderMode: 'auto',
-    rewriteLinks: false,
+    rewriteLinks: true,
     rootPostAuthor: undefined,
     commentsChildren: undefined,
     pendingVotes: [],

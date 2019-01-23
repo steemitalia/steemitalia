@@ -15,339 +15,134 @@ class About extends React.Component {
           <meta name="robots" content={robots} />
         </Helmet>
         <div className="container faq-container">
-          <h3 className="sub-title"> {'Che cos’è Steemitalia?'} </h3>
-          <p>
-            {' '}
-            Steemitalia è la prima piattaforma di blogging italiana basata su blockchain Steem.{' '}
-          </p>
-          <p>
-            {`Il progetto nasce dall’esigenza di creare uno strumento su misura in grado di soddisfare tutte le esigenze della crescente comunità italiana su Steem. Con una piattaforma graficamente accattivante e un utilizzo intuitivo, Steemitalia si propone come una valida alternativa tutta italiana a Steemit e Busy, attualmente i frontend più avanzati su blockchain Steem di cui tecnicamente Steemitalia è un fork.`}
-          </p>
-          <h3 className="sub-title"> {'L’ecosistema Steem'} </h3>
-          <p>
-            {`L’idea di fondo della blockchain Steem è realizzare un ecosistema efficace per la creazione di community che stimolino le interazioni social, attraverso un sistema premiale basato sulla criptovaluta Steem. Steem combina concetti presi dal mondo del blogging, dei social media e delle community online, oltre che dal campo delle criptovalute e della community che le circonda. In qualsiasi tipo di community online e offline, un concetto chiave per incentivare le persone a partecipare è un equo sistema di retribuzione/riconoscimento del lavoro svolto, che rifletta in modo giusto il contributo che il singolo dà alla community. Steem è la prima criptovaluta che prova a retribuire in modo accurato e trasparente un illimitato numero di persone che attraverso i propri contenuti personali e originali partecipano allo sviluppo della community.  `}
-          </p>
-          <p>
-            {' '}
-            {`Creata sulla base di programmi open source e di una blockchain pubblicamente accessibile per permettere la costruzione di community e le interazioni tra utenti grazie ai pagamenti in cryptovaluta, Steem permette di creare applicazioni e servizi che accedono direttamente alla blockchain.`}
-          </p>
-          <p
-          >{`La piattaforma Steem è creata usando Graphene, la stessa tecnologia che alimenta Bitshares (un altro network basato su blockchain creato da Dan Larimer, il co-fondatore di Steem e Steemit insieme a Ned Scott). `}</p>
-
-          <h3 className="sub-title"> {'Come creare un account Steem?'} </h3>
-          <p>
-            {' '}
-            Per accedere a Steemitalia avrete bisogno di un account Steem, per crearlo basta
-            completare la procedura di iscrizione elencati in questa pagina:{' '}
-            <a href={`https://signup.steemit.com/`} rel="noopener noreferrer" target="_blank">
-              https://signup.steemit.com/{' '}
-            </a>{' '}
-          </p>
+          <h1 className="title">{'Termini e Condizioni'}</h1>
           <br />
           <p>
-            {`Per completare l’iscrizione a Steem tramite il sito Steemit sono necessari diversi giorni di attesa, ma ci sono altri modi per creare un account:`}
-          </p>
-          <ul className="bullet-true">
-            <li>Sul sito Steemconnect</li>
-            <li>Sul sito blocktrades </li>
-            <li>Sul sito Get on steem!</li>
-          </ul>
-          <h3 className="sub-title"> {'Il profilo utente: Reputazione e VP'} </h3>
-          <p>La Reputazione Utente ha fondamentalmente due funzioni.</p>
-          <ul>
-            <li> Indica quanto un utente è "fidato o apprezzato dalla comunità".</li>
-            <li> Impedisce agli utenti con scarsa reputazione di danneggiare gli altri utenti.</li>
-          </ul>
-          <p>
-            Tuttavia con l’avvento dei bot di autovoto la reputazione risulta spesso falsata e poco
-            attendibile sul grado reale di affidabilità di un utente.
+            Di seguito sono descritti i termini e le condizioni alle quali Steemitalia offre agli utenti l'accesso ai propri servizi disponibili sul sito web Steemitalia.
           </p>
           <br />
-          <p>Steem, Steem Power, SBD</p>
-          <p>Su Steem coesistono 3 monete:</p>
-          <ul type="number">
-            <li>1. STEEM </li>
-            <li>2. STEEM DOLLARS </li>
-            <li>3. STEEM POWER: il potere di voto che ogni utente guadagna sulla piattaforma</li>
-          </ul>
-          <h3 className="sub-title"> {'STEEM'} </h3>
+          <h2 className="sub-title">{'1. Definizioni'}</h2>
           <p>
-            Gli STEEM permettono il funzionamento dell'intero sistema Steem. La criptovaluta Steem
-            ha un valore determinato dal mercato, è altamente volatile (quindi fortemente soggetta
-            alle fluttuazioni di mercato), non è destinata all’uso per fini commerciali (per
-            acquisti di beni o servizi) ma per essere scambiato sul mercato con altre monete a fini
-            speculativi.
+            Per consentire una completa comprensione e accettazione dei presenti termini e condizioni, i seguenti termini, al singolare e al plurale, avranno il significato di seguito indicato:
           </p>
           <p>
-            Gli STEEM possono essere scambiati infatti, sia nel mercato interno a Steemit che sui
-            vari exchange come blocktrades, bittrex, ecc.
-          </p>
-          <h3 className="sub-title"> {'STEEM DOLLARS'} </h3>
-          <p>Gli STEEM DOLLARS sono la moneta principale dell'ecosistema Steem.</p>
-          <p>
-            In linea teorica gli STEEM DOLLAR dovrebbero essere ancorati al dollaro, e assumere lo
-            stesso valore di quest’ultimo. Non importa quanto si apprezza o deprezza STEEM, grazie a
-            STEEM DOLLAR si potrà sempre scambiare 1 STEEM DOLLAR per almeno 1 Dollaro USA. Tuttavia
-            nella pratica si è visto che gli STEEM DOLLAR (chiamati anche SD o SBD - steem backed
-            dollars) possono assumere valori ben più alti. Quello che è importante capire è che lo
-            STEEM DOLLAR è una valuta stabile, o per meglio dire "protetta", la sua valutazione
-            infatti non dovrebbe mai sfondare al ribasso il prezzo minimo (pavimento) di 1$.
-          </p>
-          <p>Nota bene: Le ricompense dei post su Steemit sono quantificate in STEEM DOLLAR.</p>
-          <p>
-            Anche gli STEEM DOLLARS possono essere scambiati sia sul mercato interno o sui
-            variexchange come blocktrades, bittrex, ecc.
-          </p>
-          <h3 className="sub-title"> {'STEEM POWER'} </h3>
-          <p>
-            {' '}
-            Lo STEEM POWER è un investimento a lungo termine. Il valore di ogni unità di STEEM POWER
-            equivale a quella di uno STEEM. Maggiore è la quantità di STEEM POWER che si possiede
-            maggiore sarà il valore del vostro voto.
+            <b>Applicazione:</b> il sito web Steemitalia &egrave; un servizio fornito da Steempostitalia, la prima e maggiore comunit&agrave; su Steem per tutti gli utenti italiani della piattaforma. Steemitalia &egrave; un front-end sulla blockchain di Steem, ovvero un'applicazione web studiata per leggere i contenuti che gli utenti pubblicano su tale blockchain. Su Steemitalia &egrave; possibile vedere dati, testo, fotografie, immagini, video, audio, grafica, articoli, commenti, software, codice, script e altri contenuti presenti sulla blockchain di Steem. Per visionare i contenuti del sito Steemitalia non &egrave; necessario avere un account. Se si desidera utilizzare tutti i servizi, ovvero <b>pubblicare post, votare e commentare</b>, &egrave; necessario creare un account su blockchain Steem. La procedura di creazione dell'account &egrave; esterna al sito di Steemitalia;
           </p>
           <p>
-            Lo STEEM POWER è vincolato, non è possibile utilizzarlo per transazioni in uscita o per
-            scambi. Il prelevamento è consentito con una procedura chiamata Power Down per mezzo
-            della quale sarà possibile prelevare 1/13 (un tredicesimo) dell'intero importo a
-            settimana per 13 settimane.
+            <b>Servizi:</b> i prodotti e/o servizi offerti tramite l'Applicazione;
           </p>
           <p>
-            Grazie a questa procedura, STEEM POWER rappresenta il modo migliore e sicuro per
-            accumulare fondi, visto che anche in caso di account hackerato, ci sarebbe più tempo per
-            porre riparo.
-          </p>
-          <h3 className="sub-title"> {'Scrivere un post'} </h3>
-          <p>
-            Il concetto alla base di Steemit è semplice: remunerare gli autori per i contenuti che
-            producono tramite i voti che ricevono ai loro post.{' '}
+            <b>Utente:</b> il soggetto che accede all'Applicazione, senza distinzione di natura giuridica e finalit&agrave; perseguita, interessato ai Servizi offerti tramite l'Applicazione;
           </p>
           <p>
-            Più il post sarà apprezzato dagli utenti, più voti riceverà e più guadagnerà. Questo
-            perché a differenza degli altri social network, il voto che un utente dà ad un altro ha
-            valore.
-          </p>
-          <h3 className="sub-title"> {'Votare un post'} </h3>
-          <p>
-            Votare un post o fare Upvote, vuol dire apprezzare il contenuto di un post e tramite il
-            proprio voto retribuirlo. Il valore del voto dipende dalla quantità di Steem Power
-            accumulato. Maggiore lo Steem Power, maggiore il valore del voto del singolo utente.{' '}
-          </p>
-          <h3 className="sub-title"> {'Quanto valgono i voi?'} </h3>
-          <p>
-            Il valore del voto del singolo utente è determinato da diversi fattori, tra cui lo
-            **SteemPower** (il potere di voto che ogni utente guadagna sulla piattaforma), la
-            reputazione, l’andamento del mercato delle crypto, ecc.{' '}
-          </p>
-          <p>
-            Scrivere commenti e ricercare contenuti validi “paga”: infatti su Steemit anche
-            l’attività di curation viene retribuita. La curation è l’attività di voto dei contenuti
-            di valore da parte dei lettori. Anche i lettori, quindi leggendo e valutando
-            positivamente un contenuto ricevono un tornaconto economico.{' '}
-          </p>
-          <h3 className="sub-title"> {'Commentare un post'} </h3>
-          <p>
-            Scrivere commenti e ricercare contenuti validi “paga”: infatti su Steemit anche
-            l’attività di curation viene retribuita. La curation è l’attività di voto dei contenuti
-            di valore da parte dei lettori. Anche i lettori, quindi leggendo e valutando
-            positivamente un contenuto ricevono un tornaconto economico.{' '}
-          </p>
-          <h3 className="sub-title"> {'Quanto vale un post?'} </h3>
-          <p>
-            <a
-              href={`https://steemitalia.com/ita/@thenightflier/ricompense-calcolo-manuale-ed-automatizzato`}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              https://steemitalia.com/ita/@thenightflier/ricompense-calcolo-manuale-ed-automatizzato{' '}
-            </a>
-          </p>
-          <p>
-            Il valore accumulato da un post nell’arco dei 7 giorni necessari per poter riscuotere il
-            ricavato, corrisponde a una cifra ben precisa di STEEM, SBD e STEEM POWER.{' '}
-          </p>
-          <p>
-            Le ricompense effettive dei post che pubblicate, si calcolano moltiplicando l'ammontare
-            che vedete sotto il vostro post per ~75% e dividendo per 2. La cifra ottenuta sarà la
-            quantità di SBD che incasserete, invece dividendo la stessa per il cambio attuale di
-            Steem contro USD (dollari americani) otterrete la quantità di SP (Steem Power) che
-            incasserete.
-          </p>
-          <h3 className="sub-title"> {'Riscuotere i premi'} </h3>
-          <p>
-            Dopo una settimana dalla pubblicazione del post è possibile riscuotere i premi derivati
-            dal post nell’apposita sezione del profilo utente.{' '}
-          </p>
-          <h3 className="sub-title"> {'Reinvestire nel sistema'} </h3>
-          <p>
-            Il valore del singolo utente e quello dei voti dei membri della community sono
-            fondamentali per la crescita del singolo e del gruppo. È per questo che è fondamentale
-            reinvestire nel sistema Steemit gli STEEM e gli SBD guadagnati tramite i propri post
-            tramite la funzione del POWER UP.
-          </p>
-          <h3 className="sub-title"> {'Le Communities'} </h3>
-          <p>
-            Le community sono la linfa vitale di Steem. Creare gruppi di persone che condividano un
-            certo tipo di interessi, che sia per vicinanza geografica, linguistica, culturale o
-            sociale, è fondamentale per incentivare l’interazione e produrre contenuti di reale
-            interesse per gli utenti.{' '}
-          </p>
-          <h3 className="sub-title"> {'Steempostitalia'} </h3>
-          <p>
-            “SPI è nato principalmente come punto di ritrovo per gli utenti di Steemit di lingua
-            italiana. Nasce con l'obiettivo di creare una comunità italiana dove chiedere, trovare e
-            dare aiuto, dove condividere idee, proposte, progetti, dove trovare una moltitudine di
-            persone così diverse tra loro, ma tutte, in fondo, accomunate da quello spirito e quella
-            necessità che li ha portati, in un modo o nell'altro, ad avvicinarsi e ad entrare in
-            questo "nuovo mondo, sconosciuto ai più “ @bhuz
-          </p>
-          <p>
-            @Steempostitalia è la community italiana di Steem, nata per orientarsi nel mare magnum
-            dell’universo virtuale della piattaforma.{' '}
-          </p>
-
-          <p>
-            <strong>Steempostitalia è tante cose: </strong>
-          </p>
-          <ul className="bullet-true margin-20">
-            <li>
-              @Steempostitalia è uno **spazio virtuale di incontro** per gli utenti italiani
-              iscritti sulla piattaforma Steemit.
-            </li>
-            <li>
-              È un **hub di idee e progetti** (come ad esempio **@spi-postit**, la rubrica
-              quotidiana deimigliori contenuti della community), che cerca nella tecnologia della
-              blockchain un motore di innovazione e propositività.{' '}
-            </li>
-            <li>
-              È soprattutto uno **strumento di supporto per i nuovi entrati nel mondo Steemit**:
-              risponde alle domande che tutti si sono fatti quando si sono confrontati per la prima
-              volta con il sito e aiuta gli utenti a inserirsi nel sistema, a confrontarsi con la
-              piattaforma e a crescere tramite diverse iniziative (ad es. contest, progetti di
-              gruppo).
-            </li>
-          </ul>
-          <p>
-            L’account Steem di @steempostitalia è un account privato di proprietà di @thenightflier.
-          </p>
-          <p>
-            L’account è messo a disposizione del gruppo di @steempostitalia per finanziare progetti,
-            contest, daily digest e ogni tipo di iniziativa atta alla crescita individuale e
-            comunitaria.
-          </p>
-          <p>
-            L’account @steempostitalia dunque viene gestito oltre che dal proprietario anche del
-            team di coordinamento.
-          </p>
-          <h3 className="sub-title"> {'Le regole di SPI'} </h3>
-
-          <p>
-            <a
-              href={`https://www.steemitalia.com/regole`}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              https://www.steemitalia.com/regole
-            </a>
-          </p>
-
-          <h3 className="sub-title"> {'Gruppo SteempostIT su discord'} </h3>
-          <p>
-            Discord è un servizio di messaggistica evoluto che integra sia le funzionalità del
-            messaging puro proprie di altre applicazioni come Telegram, Messenger, ecc a quelle
-            vocali proprie di Skype, Teamspeak, ecc il tutto con un'interfaccia intuitiva e con una
-            qualità audio eccellente. Discord gira su PC, MAC, Android e iOS quindi potrete
-            scaricare l'app e usarla da mobile come fate con Telegram.
-          </p>
-          <p>
-            Per unirsi al gruppo, basta seguire questo link:{' '}
-            <a href={`discordapp.com/invite/QDKPzSp`} rel="noopener noreferrer" target="_blank">
-              discordapp.com/invite/QDKPzSp
-            </a>{' '}
-          </p>
-          <p>I contest di Steempostitalia</p>
-          <p>
-            SteemPostItalia organizza contest dedicati ai membri della community e supporta i
-            contest indetti dagli stessi membri, a patto che rispettino uno o più di questi
-            obiettivi:
-          </p>
-          <ul className="bullet-true">
-            <li>Utilità sociale</li>
-            <li>Crescita della comunità</li>
-            <li>Promozione della comunità</li>
-            <li>Sviluppo di conoscenze specifiche</li>
-            <li>Sviluppo di abilità creative e intellettuali</li>
-            <li>Raccolta fondi per iniziative benefiche (documentabili)</li>
-          </ul>
-          <p>
-            I contest che comunque NON potranno essere presi in considerazione sono quelli che
-            trattano di:
-          </p>
-          <ul className="bullet-true">
-            <li>Scommesse</li>
-            <li>Lotterie</li>
-            <li>Politica</li>
-            <li>Religione</li>
-            <li>Offese</li>
-            <li>Volgarità</li>
-          </ul>
-          <p>
-            <strong>
-              Più in generale, verranno supportati i contest che necessitano di una certa
-              applicazione di tempo e di impegno da parte dei partecipanti.
-            </strong>
+            <b>Condizioni:</b> il presente contratto che disciplina i rapporti tra Steemitalia e gli Utenti.
           </p>
           <br />
+          <h2 className="sub-title">{'2. Registrazione'}</h2>
           <p>
-            Chiaramente non tutti i contest possono essere supportati, come sapete la quantità di VP
-            di @steempostitalia è limitata, quindi anche se vengono rispettate le linee guida
-            qualora l'ammontare di VP residuo non fosse sufficiente il vostro contest potrebbe non
-            essere supportato.{' '}
-          </p>
-          <h3 className="sub-title">I progetti SPI</h3>
-          <p>
-            SPI è anche un incubatore di progetti proposti dagli utenti della community. Sul server
-            Discord di SteempostIT è stato aperto il nuovo canale SPI-PROJECTS che a sua volta
-            ospita le stanze dei progetti, moderate e gestite dai singoli Project-Manager. Per
-            sottoporre la propria idea, basta compilare questo form di presentazione dei progetti,
-            che verrà fissato anche nella stanza Discord nuove-proposte, liberamente utilizzabile da
-            chiunque per presentare a SPI la sua proposta, che sia essa in fase embrionale, o
-            decisamente più strutturata.
+            Per poter utilizzare alcune funzionalit&agrave; dell'Applicazione, gli Utenti devono registrarsi alla blockchain di Steem, estranea a Steemitalia fornendo, in maniera veritiera e completa, tutti i dati richiesti. L'Utente ha l'onere di custodire le proprie credenziali di accesso.
           </p>
           <p>
-            Oltre al nome del proponente e al titolo della proposta progettuale, viene richiesto di
-            identificare principalmente:
+            Quando si crea un account, si consiglia vivamente di adottare le seguenti precauzioni, in quanto il mancato rispetto di tali consigli potrebbe comportare la perdita di accesso e / o controllo sul proprio Wallet: <br />
+            (a) Creare una password unica e complessa; <br />
+            (b) Fornire informazioni accurate e veritiere; <br />
+            (c) Mantenere e aggiornare tempestivamente le informazioni del proprio Account; <br />
+            (d) mantenere la sicurezza del proprio account proteggendo la password del proprio account e l'accesso al proprio computer e al proprio account; <br />
+            (e) Informarci tempestivamente se scoprite o sospettate violazioni della sicurezza relative al vostro Account, fermo restando che i soli responsabili del vostro account e che Steemitalia potr&agrave; solo fornirvi indicazioni generiche sulla procedura da seguire in questi casi.
           </p>
           <p>
-            <strong>- l'ambito in cui si colloca il progetto; </strong>
+            L'Utente ha l'onere di custodire le proprie credenziali di accesso.
           </p>
           <p>
-            <strong>
-              - una descrizione del progetto in cui si prevedano i destinatari, gli obiettivi, i
-              risultati attesi;{' '}
-            </strong>
+            Resta inteso che in nessun caso Steemitalia potr&agrave; essere ritenuto responsabile in caso di smarrimento, diffusione,furto o utilizzo non consentito da parte di terzi,a qualsivoglia titolo, delle credenziali di accesso degli Utenti.
+          </p>
+          <h2 className="sub-title">{'3. Contenuti inviati dagli Utenti'}</h2>
+          <p>
+            L'Utente pu&ograve; caricare sulla blockchain di Steem tramite l'Applicazione materiale, contenuti, informazioni, annunci o inserzioni (di seguito i "Contenuti" o singolarmente il "Contenuto"), purch&eacute; il Contenuto non sia illecito (ovvero osceno, intimidatorio, diffamatorio, pornografico, abusivo, o a qualsiasi titolo illegale, o violi la privacy, i diritti di propriet&agrave; intellettuale e/o industriale di Steemitalia e/o di terzi) o non sia in altro modo lesivo nei confronti del Titolare e/o terzi o deplorevole e non contenga virus, propaganda politica, sollecitazione commerciale, e-mail di massa o qualunque altra forma di spamming.
           </p>
           <p>
-            <strong>
-              - il tipo di supporto ritenuto necessario (dalla progettazione nel suo complesso, alla
-              richiesta di sostegno economico, alla ricerca di collaboratori, alla
-              pubblicizzazione);{' '}
-            </strong>
+            L'Utente &egrave; totalmente ed esclusivamente responsabile dell'uso dell'Applicazione (da intendersi con riguardo alle funzioni di pubblicazione, di consultazione, di gestione dei Contenuti e di contatto tra Utenti) ed &egrave; pertanto l'unico garante e responsabile dei beni e dei servizi offerti nonch&eacute; della correttezza, completezza e liceit&agrave; dei Contenuti e del proprio comportamento nell'ambito del contatto tra Utenti.
           </p>
           <p>
-            <strong>
-              - il tipo di competenze richieste per costruire un eventuale team di collaboratori;{' '}
-            </strong>
+            L'Utente garantisce altres&igrave; che i propri post non violino alcun diritto d'autore n&eacute; diritto di propriet&agrave; industriale n&eacute; altro diritto di terzi. In caso di contestazione da parte di terzi riguardo a qualsiasi post condotta ad esso legata, l'Utente se ne assume la piena responsabilit&agrave; e si impegna a tenere manlevata e indenne Steemitalia da qualsiasi danno, perdita o spesa.
           </p>
           <p>
-            <strong>- una previsione di tempistica e di fasi del progetto;</strong>
+            Steemitalia, pur non essendo in grado di assicurare un controllo puntuale sui Contenuti visualizzati, si riserva il diritto di fare quanto in sua facolt&agrave; (segnalare, flaggare, oscurare alla lettura) quelli che, a sua discrezionale giudizio, appaiono illeciti, abusivi, diffamatori, osceni o lesivi del diritto d'autore e dei marchi o in ogni caso inaccettabili.
           </p>
           <p>
-            <strong>- l'identificazione di eventuali costi (e di chi li sosterrà);</strong>
+          &Egrave; vietato utilizzare un account che non sia di titolarit&agrave; dell'Utente, utilizzare i dati personali e le credenziali di altro Utente al fine di appropriarsi della sua identit&agrave;, o in altro modo dichiarare il falso sull'origine dei Contenuti.
           </p>
           <p>
-            <strong>
-              - la previsione dei benefici (economici o altro) derivanti dalla realizzazione.
-            </strong>
+            L'Utente prende atto e accetta che i Contenuti pubblicati sulla blockchain Steem attraverso l'Applicazione (a titolo esemplificativo e non esaustivo, per inviare commenti, esprimere opinioni, partecipare a contest ed iniziative, inviare immagini o file video e audio) non possono essere modificati, rimossi o pubblicati da Steemitalia.
+          </p>
+          <p>
+            Eventuale materiale protetto da copyright di terzi pu&ograve; essere utilizzato solo qualora l'Utente abbia acquisito, dal titolare del diritto d'autore, i connessi diritti di utilizzazione, quindi solo con l'autorizzazione scritta del titolare del diritto e con l'obbligo di citare la fonte e l'esistenza di tale autorizzazione. Il materiale fotografico o video di terzi o riproducente il ritratto di terzi pu&ograve; essere utilizzato solo qualora l'Utente abbia acquisito il consenso dell'autore e/o del soggetto ritratto. In relazione alla disponibilit&agrave; di tali diritti e consensi l'Utente si assume ogni responsabilit&agrave; esonerando completamente Steemitalia.
+          </p>
+          <p>
+          L'Utente si assume, inoltre, la piena responsabilit&agrave; circa l'esattezza e veridicit&agrave; dei Contenuti pubblicati attraverso il suo account , in nome e/o per conto di terzi, e assicura che lo stesso &egrave; nella sua legittima disponibilit&agrave;, non &egrave; contrario a norme imperative e non viola alcun segno distintivo, diritto di propriet&agrave; intellettuale, industriale, diritto di immagine o altro diritto di terzi derivante dalle norme giuridiche vigenti o dalle consuetudini o dagli usi.
+          </p>
+          <p>
+            L'Utente si impegna a non utilizzare i Servizi in maniera impropria o in violazione di qualsivoglia norma di legge o di regolamento. In ogni caso il Contenuto immesso non deve mai presentare forme e/o contenuti a carattere pedo-pornografico, osceno, diffamatorio, offensivo, che promuova o induca ad attivit&agrave; illegali o che contenga virus o altri programmi danneggianti la funzionalit&agrave; di sistemi informatici altrui.
+          </p>
+          <br />
+          <h2 className="sub-title">4. Diritti di Propriet&agrave; Industriale e Intellettuale</h2>
+          <p>
+            Steemitalia.com trae il suo contenuto dalla blockchain di Steem, e quindi tutti i contenuti sono sono offerti a solo scopo informativo. Il sito web SteemItalia.com non &egrave; in alcun modo responsabile dell'accuratezza o dell'affidabilit&agrave; di tali contenuti.
+            SteemItalia.com non &egrave; responsabile per i contenuti che possono apparire su questo sito. Tutto il contenuto &egrave; derivato dalla blockchain di Steem. 
+            Steemitalia.com, tuttavia, riporta i Contenuti di una piccola area della blockchain di Steem, evidenziando principalmente contenuti che gli Utenti hanno contrassegnato con il tag #ITA..
+            SteemItalia.com non possiede alcun contenuto presente su questo sito Web, ad eccezione dei contenuti degli account degli utenti: @steempostitalia, @spi-postit e @spi-blog. Tutti gli altri contenuti appartengono esclusivamente agli autori originali, che hanno la responsabilit&agrave; esclusiva di quanto pubblicato sulla blockchain di Steem.
+            Tutto il contenuto che appare su SteemItalia.com &egrave; completamente visibile al pubblico e indicizzato sui motori di ricerca.
+            L'Utente dichiara di assumersi la piena e totale responsabilit&agrave; giuridica nei confronti di quanto pubblicato sul proprio blog e di tutti i Contenuti, manlevando e tenendo indenne Steemitalia da qualsiasi rivendicazione o pretesa derivante dall'uso o abuso dei Servizi offerti.
+          </p>
+          <p>
+            Le presenti Condizioni non concedono all'Utente alcuna licenza d'uso relativa all'Applicazione e/o a singoli Contenuti e/o materiali ivi disponibili, se non diversamente disciplinato.
+          </p>
+          <br />
+          <h2 className="sub-title">{'5. Esclusione della Garanzia'}</h2>
+          <p>
+            L'Applicazione viene fornita "cos&igrave; come &egrave;" e "come &egrave; disponibile" e Steemitalia non fornisce alcuna garanzia esplicita o implicita in relazione all'Applicazione, n&eacute; fornisce alcuna garanzia che l'Applicazione potr&agrave; soddisfare le esigenze degli Utenti o che non avr&agrave; mai interruzioni o sar&agrave; priva di errori o che sar&agrave; priva di virus o bug.
+            Steemitalia si adoperer&agrave; per assicurare che l'Applicazione sia disponibile ininterrottamente 24 ore al giorno, ma non potr&agrave; in alcun modo essere ritenuto responsabile se, per qualsiasi motivo, l'Applicazione non fosse accessibile e/o operativa in qualsiasi momento o per qualsiasi periodo. 
+            L'accesso all'Applicazione pu&ograve; essere sospeso temporaneamente e senza preavviso in caso di guasto del sistema, manutenzione,riparazioni o per ragioni del tutto estranee alla volont&agrave; di Steemitalia o per eventi di forza maggiore.
+          </p>
+          <br />
+          <h2 className="sub-title">6. Limitazione della Responsabilit&agrave;</h2>
+          <p>
+            Steemitalia non sar&agrave; responsabile in merito a danni, perdite e costi subiti dall'Utente.
+          </p>
+          <p>
+            L'Utente si impegna a mantenere indenne e a manlevare Steemitalia da qualsiasi obbligo o responsabilit&agrave;, incluse le eventuali spese legali sostenute per difendersi in giudizio, che dovessero sorgere a fronte di danni provocati ad altri Utenti o a terzi, in relazione ai Contenuti caricati o alla violazione dei termini di legge o dei termini delle presenti Condizioni.
+          </p>
+          <p>
+            Pertanto, Steemitalia non sar&agrave; responsabile per: <br />
+            1. eventuali perdite <br />
+            2. Ogni perdita di opportunit&agrave; commerciale e qualsiasi altra perdita, anche indiretta, eventualmente subita dall'Utente (quali,a titolo esemplificativo e non esaustivo, perdite commerciali, perdita di ricavi, introiti,profitti o risparmi presunti, perdita di contratti o di relazioni commerciali,perdita della reputazione o del valore di avviamento, etc.); <br />
+            3. errato o inidoneo utilizzo dell'Applicazione da parte degli Utenti o di terzi. <br />
+          </p>
+          <br />
+          <h2 className="sub-title">{'7. Forza maggiore'}</h2>
+          <p>
+            Steemitalia non potr&agrave; essere considerato responsabile per eventi imprevisti ed imprevedibili e, comunque, indipendenti dalla volont&agrave; quali, a titolo esemplificativo e non esaustivo, guasti o interruzioni alle linee telefoniche o elettriche, alla rete internet e/o comunque ad altri strumenti di trasmissione, indisponibilit&agrave; di siti web, scioperi,eventi naturali, virus ed attacchi informatici, interruzioni nell'erogazione di prodotti,servizi o applicazioni di terze parti.
+          </p>
+          <br />
+          <h2 className="sub-title">{'8. Collegamento a siti di terzi'}</h2>
+          <p>
+            L'Applicazione potrebbe contenere collegamenti a siti di terzi. Steemitalia non esercita alcun controllo su di essi e, pertanto, non &egrave; in alcun modo responsabile per i contenuti di questi siti.
+          </p>
+          <br />
+          <h2 className="sub-title">9. Invalidit&agrave; di singole clausole</h2>
+          <p>
+            Qualora una qualsiasi disposizione delle presenti Condizioni risultasse illegale o non valida, essa non verr&agrave; considerata come parte delle Condizioni e questo non influir&agrave; sulle disposizioni rimanenti che continueranno ad essere valide nella misura massima consentita dalla legge.
+          </p>
+          <br />
+          <h2 className="sub-title">{'10. Privacy'}</h2>
+          <p>
+            SteemItalia.com non conserva alcuna informazione personale; tutte le chiavi e password private funzioneranno attraverso il servizio Steemconnect (https://steemconnect.com/) che gli utenti devono accettare per poter accedere ai servizi di Steemitalia.com
+          </p>
+          <br />
+          <br />
+          <br />
+          <p>
+            Data 17/12/2018
           </p>
         </div>
         <Footer />

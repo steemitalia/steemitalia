@@ -48,7 +48,7 @@ class Comments extends React.Component {
     rootLevelComments: [],
     commentsChildren: undefined,
     pendingVotes: [],
-    rewriteLinks: false,
+    rewriteLinks: true,
     sliderMode: 'auto',
     loading: false,
     show: false,

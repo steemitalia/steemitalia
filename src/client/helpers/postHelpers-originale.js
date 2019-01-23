@@ -1,6 +1,4 @@
 import _ from 'lodash';
-import { getHtml } from '../components/Story/Body'; // aggiunto
-import { extractImageTags } from './parser'; // aggiunto
 import { categoryRegex } from './regexHelpers';
 import { jsonParse } from './formatter';
 import DMCA from '../../common/constants/dmca.json';
@@ -55,13 +53,5 @@ export const isBannedPost = post => {
 
   return _.includes(bannedAuthors, post.author) || _.includes(bannedPosts, postURL);
 };
-
-export function getContentImages(content, parsed = false) {
-  const parsedBody = parsed ? content : getHtml(content, {}, 'text');
-
-  return extractImageTags(parsedBody).map(tag =>
-    tag.src.replace('https://steemitimages.com/0x0/', '').replace('https://steemitimages.com/2x2/', '').replace('https://steemitimages.com/3x3/', ''),
-  );
-}
 
 export default null;

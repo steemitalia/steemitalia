@@ -42,14 +42,14 @@ class LetsGetStarted extends React.Component {
   };
 
   static getCurrentUserState(authenticatedUser, followingList) {
-    const hasPost = authenticatedUser.last_root_post !== '1970-01-01T00:00:00';
-    const hasVoted = authenticatedUser.last_vote_time !== '1970-01-01T00:00:00';
+    const hasPost = true; // authenticatedUser.last_root_post !== '1970-01-01T00:00:00';
+    const hasVoted = true; // authenticatedUser.last_vote_time !== '1970-01-01T00:00:00';
     const jsonMetadata = _.attempt(JSON.parse, authenticatedUser.json_metadata);
-    const hasProfile =
-      _.has(jsonMetadata, 'profile.name') &&
-      _.has(jsonMetadata, 'profile.about') &&
-      _.has(jsonMetadata, 'profile.profile_image');
-    const hasFollowed = _.size(followingList) >= 5;
+    const hasProfile = true;
+      // _.has(jsonMetadata, 'profile.name') &&
+      // _.has(jsonMetadata, 'profile.about') &&
+      // _.has(jsonMetadata, 'profile.profile_image');
+    const hasFollowed = true; // _.size(followingList) >= 5;
 
     return {
       hasProfile,

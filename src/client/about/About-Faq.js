@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import Footer from '../components/Footer/Footer';
-import './Faq.less';
+import '../faq/Faq.less';
 
-class Faq extends React.Component {
+class About extends React.Component {
   render() {
     const { location } = this.props;
     const robots = location.pathname === '/' ? 'index,follow' : 'noindex,follow';
@@ -15,14 +15,12 @@ class Faq extends React.Component {
           <meta name="robots" content={robots} />
         </Helmet>
         <div className="container faq-container">
-          <h1 className="sub-title">FAQ</h1>
-          <br />
-          <h2 className="sub-title">Che cos'&egrave; Steemitalia?</h2>
+          <h2 className="sub-title">Che cos?&egrave; Steemitalia?</h2>
           <p>
           Steemitalia &egrave; la prima piattaforma di blogging italiana basata su blockchain Steem.
           </p>
           <p>
-          Il progetto nasce dall'esigenza di creare uno strumento su misura in grado di soddisfare tutte le esigenze degli utenti italiani su Steem. Con una piattaforma graficamente accattivante e un utilizzo intuitivo, Steemitalia si propone come una valida alternativa tutta italiana a Steemit e Busy, attualmente i frontend pi&ugrave; avanzati su blockchain Steem di cui tecnicamente Steemitalia &egrave; un fork.
+          Il progetto nasce dall?esigenza di creare uno strumento su misura in grado di soddisfare tutte le esigenze degli utenti italiani su Steem. Con una piattaforma graficamente accattivante e un utilizzo intuitivo, Steemitalia si propone come una valida alternativa tutta italiana a Steemit e Busy, attualmente i frontend pi&ugrave; avanzati su blockchain Steem di cui tecnicamente Steemitalia &egrave; un fork.
           </p>
           <br />
           <h2 className="sub-title">Steemitalia beta</h2>
@@ -31,9 +29,9 @@ class Faq extends React.Component {
           Steemitalia inoltre fruisce della blockchain Steem, tecnologia in continuo divenire, e dipende da API, nodi e server di propriet&agrave; di terzi, dunque fuori dal nostro controllo, pertanto ci scusiamo  in anticipo per il possibile verificarsi di disservizi e periodi pi&ugrave; o meno brevi di blackout in cui il sito potrebbe risultare offline, lento o irraggiungibile.
           </p>
           <br />
-          <h2 className="sub-title">L'ecosistema Steem</h2>
+          <h2 className="sub-title">L?ecosistema Steem</h2>
           <p>
-          L'idea di fondo della blockchain Steem &egrave; realizzare un ecosistema efficace per la creazione di community che stimolino le interazioni social, attraverso un sistema premiale basato sulla criptovaluta Steem. Steem combina concetti presi dal mondo del blogging, dei social media e delle community online, oltre che dal campo delle criptovalute e della community che le circonda. In qualsiasi tipo di community online e offline, un concetto chiave per incentivare le persone a partecipare &egrave; un equo sistema di retribuzione/riconoscimento del lavoro svolto, che rifletta in modo giusto il contributo che il singolo d&agrave; alla community. Steem &egrave; la prima criptovaluta che prova a retribuire in modo accurato e trasparente un illimitato numero di persone che attraverso i propri contenuti personali e originali partecipano allo sviluppo della community.
+          L?idea di fondo della blockchain Steem &egrave; realizzare un ecosistema efficace per la creazione di community che stimolino le interazioni social, attraverso un sistema premiale basato sulla criptovaluta Steem. Steem combina concetti presi dal mondo del blogging, dei social media e delle community online, oltre che dal campo delle criptovalute e della community che le circonda. In qualsiasi tipo di community online e offline, un concetto chiave per incentivare le persone a partecipare &egrave; un equo sistema di retribuzione/riconoscimento del lavoro svolto, che rifletta in modo giusto il contributo che il singolo d&agrave; alla community. Steem &egrave; la prima criptovaluta che prova a retribuire in modo accurato e trasparente un illimitato numero di persone che attraverso i propri contenuti personali e originali partecipano allo sviluppo della community.
           </p>
           <p>
           Creata sulla base di programmi open source e di una blockchain pubblicamente accessibile per permettere la costruzione di community e le interazioni tra utenti grazie ai pagamenti in cryptovaluta, Steem permette di creare applicazioni e servizi che accedono direttamente alla blockchain.
@@ -44,10 +42,12 @@ class Faq extends React.Component {
           Per accedere a Steemitalia avrete bisogno di un account Steem, per crearlo basta completare la procedura di iscrizione elencata in questa pagina: https://signup.steemit.com/
           </p>
           <p>
-            Per completare l'iscrizione a Steem tramite il sito Steemit sono necessari diversi giorni di attesa, ma ci sono altri modi per creare un account se ne avete gi&agrave; un altro o avete un amico che pu&ograve; farlo per voi:<br />
-            - Sul sito <a href="https://steemconnect.com/accounts/create">Steemconnect</a><br />
-            - Sul sito <a href="https://blocktrades.us/create-steem-account">Blocktrades</a><br />
-            - Sul sito <a href="https://getonsteem.com/">Get on Steem!</a>
+            Per completare l?iscrizione a Steem tramite il sito Steemit sono necessari diversi giorni di attesa, ma ci sono altri modi per creare un account se ne avete gi&agrave; un altro o avete un amico che pu&ograve; farlo per voi:
+            <ul>
+              <li>Sul sito <a href="https://steemconnect.com/accounts/create">Steemconnect</a></li>
+              <li>Sul sito <a href="https://blocktrades.us/create-steem-account"Blocktrades</a></li>
+              <li>Sul sito <a href="https://getonsteem.com/"Get on Steem!"</a></li>
+            </ul>
           </p>
           <br />
           <h2 className="sub-title">Il profilo utente: Reputazione e VP</h2>
@@ -60,15 +60,17 @@ class Faq extends React.Component {
           <br />
           <h2 className="sub-title">STEEM, STEEM POWER, SBD</h2>
           <p>
-            Su Steem coesistono 3 monete:<br />
-            - STEEM<br />
-            - STEEM POWER (o SP): il potere di voto che ogni utente guadagna sulla piattaforma<br />
-            - STEEM DOLLARS (o SBD)
+            Su Steem coesistono 3 monete:
+            <ol>
+              <li>STEEM</li>
+              <li>STEEM POWER (o SP): il potere di voto che ogni utente guadagna sulla piattaforma</li>
+              <li>STEEM DOLLARS (o SBD)</li>
+            </ol>
           </p>
           <br />
           <h2 className="sub-title">STEEM</h2>
           <p>
-          Gli STEEM permettono il funzionamento dell'intero sistema Steem. La criptovaluta Steem ha un valore determinato dal mercato, &egrave; altamente volatile (quindi fortemente soggetta alle fluttuazioni di mercato), non &egrave; destinata all'uso per fini commerciali (per acquisti di beni o servizi) ma per essere scambiato sul mercato con altre monete a fini speculativi.
+          Gli STEEM permettono il funzionamento dell'intero sistema Steem. La criptovaluta Steem ha un valore determinato dal mercato, &egrave; altamente volatile (quindi fortemente soggetta alle fluttuazioni di mercato), non &egrave; destinata all?uso per fini commerciali (per acquisti di beni o servizi) ma per essere scambiato sul mercato con altre monete a fini speculativi.
           </p>
           <p>
           Gli STEEM possono essere scambiati infatti, sia nel mercato interno a Steemit che sui vari exchange come Blocktrades, bittrex, ecc.
@@ -87,7 +89,7 @@ class Faq extends React.Component {
           <br />
           <h2 className="sub-title">STEEM DOLLARS (o SBD)</h2>
           <p>
-          In linea teorica gli STEEM DOLLAR dovrebbero essere ancorati al dollaro, e assumere lo stesso valore di quest'ultimo. Tuttavia nella pratica si &egrave; visto che gli STEEM DOLLAR (chiamati anche SD o SBD - steem backed dollars) possono assumere valori differenti (decisamente pi&ugrave; alti e pi&ugrave; bassi). 
+          In linea teorica gli STEEM DOLLAR dovrebbero essere ancorati al dollaro, e assumere lo stesso valore di quest?ultimo. Tuttavia nella pratica si &egrave; visto che gli STEEM DOLLAR (chiamati anche SD o SBD - steem backed dollars) possono assumere valori differenti (decisamente pi&ugrave; alti e pi&ugrave; bassi). 
           </p>
           <p>
           Anche gli STEEM DOLLARS possono essere scambiati sia sul mercato interno o sui vari exchange come Blocktrades, bittrex, ecc.
@@ -108,10 +110,15 @@ class Faq extends React.Component {
           <br />
           <h2 className="sub-title">Quanto valgono i voti?</h2>
           <p>
-          Il valore del voto del singolo utente &egrave; determinato da diversi fattori, tra cui lo <b>SteemPower</b> (il potere di voto che ogni utente guadagna sulla piattaforma), la reputazione, l'andamento del mercato delle crypto, ecc.
+          Il valore del voto del singolo utente &egrave; determinato da diversi fattori, tra cui lo **SteemPower** (il potere di voto che ogni utente guadagna sulla piattaforma), la reputazione, l?andamento del mercato delle crypto, ecc.
           </p>
           <p>
-          Scrivere commenti e ricercare contenuti validi "paga": infatti su Steemit anche l'attivit&agrave; di curation viene retribuita. La curation &egrave; l'attivit&agrave; di voto dei contenuti di valore da parte dei lettori. Anche i lettori, quindi leggendo e valutando positivamente un contenuto ricevono un tornaconto economico.
+          Scrivere commenti e ricercare contenuti validi ?paga?: infatti su Steemit anche l?attivit&agrave; di curation viene retribuita. La curation &egrave; l?attivit&agrave; di voto dei contenuti di valore da parte dei lettori. Anche i lettori, quindi leggendo e valutando positivamente un contenuto ricevono un tornaconto economico.
+          </p>
+          <br />
+          <h2 className="sub-title">Commentare un post</h2>
+          <p>
+          Scrivere commenti e ricercare contenuti validi ?paga?: infatti su Steemit anche l?attivit&agrave; di curation viene retribuita. La curation &egrave; l?attivit&agrave; di voto dei contenuti di valore da parte dei lettori. Anche i lettori, quindi leggendo e valutando positivamente un contenuto ricevono un tornaconto economico.
           </p>
           <br />
           <h2 className="sub-title">Quanto vale un post?</h2>
@@ -121,7 +128,7 @@ class Faq extends React.Component {
           <br />
           <h2 className="sub-title">Riscuotere i premi</h2>
           <p>
-          Dopo una settimana dalla pubblicazione del post &egrave; possibile riscuotere i premi derivati dal post nell'apposita sezione del profilo utente.
+          Dopo una settimana dalla pubblicazione del post &egrave; possibile riscuotere i premi derivati dal post nell?apposita sezione del profilo utente.
           </p>
           <br />
           <h2 className="sub-title">Reinvestire nel sistema</h2>
@@ -131,61 +138,69 @@ class Faq extends React.Component {
           <br />
           <h2 className="sub-title">Le Communities</h2>
           <p>
-          Le community sono la linfa vitale di Steem. Creare gruppi di persone che condividano un certo tipo di interessi, che sia per vicinanza geografica, linguistica, culturale o sociale, &egrave; fondamentale per incentivare l'interazione e produrre contenuti di reale interesse per gli utenti.
+          Le community sono la linfa vitale di Steem. Creare gruppi di persone che condividano un certo tipo di interessi, che sia per vicinanza geografica, linguistica, culturale o sociale, &egrave; fondamentale per incentivare l?interazione e produrre contenuti di reale interesse per gli utenti.
           </p>
           <p>
-          Esistono numerose community pi&ugrave; o meno attive e pi&ugrave; o meno popolate, per trovarle basta semplicemente cercarle su Steem.
+          Esistono numerose community pi&ugrave; o meno attive e pi&ugrave; o meno popolate, per trovarle basta semplicemente cercarle su Steem. 
           </p>
           <br />
           <h2 className="sub-title">Steempostitalia (o SPI)</h2>
-          <p>
-          "SPI &egrave; nato principalmente come punto di ritrovo per gli utenti di Steemit di lingua italiana. Nasce con l'obiettivo di creare una comunit&agrave; italiana dove chiedere, trovare e dare aiuto, dove condividere idee, proposte, progetti, dove trovare una moltitudine di persone cos&igrave; diverse tra loro, ma tutte, in fondo, accomunate da quello spirito e quella necessit&agrave; che li ha portati, in un modo o nell'altro, ad avvicinarsi e ad entrare in questo "nuovo mondo, sconosciuto ai pi&ugrave;" @bhuz
+          </p>
+          ?SPI &egrave; nato principalmente come punto di ritrovo per gli utenti di Steemit di lingua italiana. Nasce con l'obiettivo di creare una comunit&agrave; italiana dove chiedere, trovare e dare aiuto, dove condividere idee, proposte, progetti, dove trovare una moltitudine di persone cos&igrave; diverse tra loro, ma tutte, in fondo, accomunate da quello spirito e quella necessit&agrave; che li ha portati, in un modo o nell'altro, ad avvicinarsi e ad entrare in questo "nuovo mondo, sconosciuto ai pi&ugrave; ? @bhuz
           </p>
           <p>
-          @Steempostitalia &egrave;  la prima e maggiore comunit&agrave; italiana su Steem, nata per orientarsi nel mare magnum dell'universo virtuale della piattaforma.
+          @Steempostitalia &egrave;  la prima e maggiore comunit&agrave; italiana su Steem, nata per orientarsi nel mare magnum dell?universo virtuale della piattaforma.
           </p>
           <p>
-          Ma cos'&egrave; Steempostitalia?<br />
-            - @Steempostitalia &egrave; uno <b>spazio virtuale di incontro</b> per gli utenti italiani iscritti sulla piattaforma Steemit.<br />
-            - &egrave; <b>un hub di idee e progetti</b> (come ad esempio <a href="https://steemitalia.com/@spi-postit">@spi-postit</a>, la rubrica quotidiana dei migliori contenuti della community), che cerca nella tecnologia della blockchain un motore di innovazione e propositivit&agrave;.<br />
-            - &egrave; soprattutto uno <b>strumento di supporto per i nuovi entrati</b> nel mondo Steemit: risponde alle domande che tutti si sono fatti quando si sono confrontati per la prima volta con il sito e aiuta gli utenti a inserirsi nel sistema, a confrontarsi con la piattaforma e a crescere tramite diverse iniziative (ad es. contest, progetti di gruppo).
+          Ma cos'&egrave; Steempostitalia?
+            <ul>
+              <li>@Steempostitalia &egrave; uno <b>spazio virtuale di incontro</b> per gli utenti italiani iscritti sulla piattaforma Steemit.</li>
+              <li>&egrave; <b>un hub di idee e progetti</b> (come ad esempio <a href="https://steemitalia.com/@spi-postit">@spi-postit</a>, la rubrica quotidiana dei migliori contenuti della community), che cerca nella tecnologia della blockchain un motore di innovazione e propositivit&agrave;.</li>
+              <li>&egrave; soprattutto uno <b>strumento di supporto per i nuovi entrati</b> nel mondo Steemit: risponde alle domande che tutti si sono fatti quando si sono confrontati per la prima volta con il sito e aiuta gli utenti a inserirsi nel sistema, a confrontarsi con la piattaforma e a crescere tramite diverse iniziative (ad es. contest, progetti di gruppo).</li>
+            </ul>
           </p>
           <p>
-          L'account Steem di @steempostitalia &egrave; un account privato di propriet&agrave; di @thenightflier.
+          L?account Steem di @steempostitalia &egrave; un account privato di propriet&agrave; di @thenightflier.
           </p>
           <p>
-          L'account e il trail associato &egrave; messo a disposizione del gruppo di @steempostitalia per finanziare progetti, contest, daily digest e ogni tipo di iniziativa atta alla crescita individuale e comunitaria.
+          L?account e il trail associato &egrave; messo a disposizione del gruppo di @steempostitalia per finanziare progetti, contest, daily digest e ogni tipo di iniziativa atta alla crescita individuale e comunitaria.
           </p>
           <p>
-          L'account @steempostitalia dunque viene gestito oltre che dal proprietario anche del team di coordinamento.
+          L?account @steempostitalia dunque viene gestito oltre che dal proprietario anche del team di coordinamento.
           </p>
           <br />
           <h2 className="sub-title">Gruppo SteempostIT su Discord</h2>
+          </p>
           <p>
           <a href="https://discordapp.com">Discord</a> &egrave; un servizio di messaggistica evoluto che integra sia le funzionalit&agrave; del messaging puro proprie di altre applicazioni come Telegram, Messenger, ecc a quelle vocali proprie di Skype, Teamspeak, ecc il tutto con un'interfaccia intuitiva e con una qualit&agrave; audio eccellente. Discord gira su PC, MAC, Android e iOS quindi potrete scaricare l'app e usarla da mobile come fate con Telegram.
           </p>
           <p>
-          Per unirsi al gruppo, basta seguire questo link: https://discordapp.com/invite/QDKPzSp
+          Per unirsi al gruppo, basta seguire questo link: discordapp.com/invite/QDKPzSp
           </p>
           <br />
           <h2 className="sub-title">I contest di Steempostitalia</h2>
-          <p>
-          SteemPostItalia organizza contest dedicati ai membri della community e supporta i contest indetti dagli stessi membri, a patto che rispettino uno o pi&ugrave; di questi obiettivi:<br />
-            - Utilit&agrave; sociale<br />
-            - Crescita della comunit&agrave;<br />
-            - Promozione della comunit&agrave;<br />
-            - Sviluppo di conoscenze specifiche<br />
-            - Sviluppo di abilit&agrave; creative e intellettuali<br />
-            - Raccolta fondi per iniziative benefiche (documentabili)
           </p>
           <p>
-          I contest che comunque NON potranno essere presi in considerazione sono quelli che trattano di:<br />
-            - Scommesse<br />
-            - Lotterie<br />
-            - Politica<br />
-            - Religione<br />
-            - Offese<br />
-            - Volgarit<br />
+          SteemPostItalia organizza contest dedicati ai membri della community e supporta i contest indetti dagli stessi membri, a patto che rispettino uno o pi&ugrave; di questi obiettivi:
+            <ul>
+              <li>Utilit&agrave; sociale</li>
+              <li>Crescita della comunit&agrave;</li>
+              <li>Promozione della comunit&agrave;</li>
+              <li>Sviluppo di conoscenze specifiche</li>
+              <li>Sviluppo di abilit&agrave; creative e intellettuali</li>
+              <li>Raccolta fondi per iniziative benefiche (documentabili)</li>
+            </ul>
+          </p>
+          <p>
+          I contest che comunque NON potranno essere presi in considerazione sono quelli che trattano di:
+            <ul>
+              <li>Scommesse</li>
+              <li>Lotterie</li>
+              <li>Politica</li>
+              <li>Religione</li>
+              <li>Offese</li>
+              <li>Volgarit</li>
+            </ul>
           Pi&ugrave; in generale, verranno supportati i contest che necessitano di una certa applicazione di tempo e di impegno da parte dei partecipanti.
           </p>
           <p>
@@ -193,18 +208,21 @@ class Faq extends React.Component {
           </p>
           <br />
           <h2 className="sub-title">I progetti SPI</h2>
+          </p>
           <p>
           SPI &egrave; anche un incubatore di progetti proposti dagli utenti della community. Sul server Discord di SteempostIT &egrave; stato aperto il nuovo canale SPI-PROJECTS che a sua volta ospita le stanze dei progetti, moderate e gestite dai singoli Project-Manager. Per sottoporre la propria idea, basta compilare questo form di presentazione dei progetti, che verr&agrave; fissato anche nella stanza Discord nuove-proposte, liberamente utilizzabile da chiunque per presentare a SPI la sua proposta, che sia essa in fase embrionale, o decisamente pi&ugrave; strutturata.
           </p>
           <p>
-          Oltre al nome del proponente e al titolo della proposta progettuale, viene richiesto di identificare principalmente:<br />
-            - l'ambito in cui si colloca il progetto;<br />
-            - una descrizione del progetto in cui si prevedano i destinatari, gli obiettivi, i risultati attesi;<br />
-            - il tipo di supporto ritenuto necessario (dalla progettazione nel suo complesso, alla richiesta di sostegno economico, alla ricerca di collaboratori, alla pubblicizzazione);<br />
-            - il tipo di competenze richieste per costruire un eventuale team di collaboratori;<br />
-            - una previsione di tempistica e di fasi del progetto;<br />
-            - l'identificazione di eventuali costi (e di chi li sosterr&agrave;);<br />
-            - la previsione dei benefici (economici o altro) derivanti dalla realizzazione.
+          Oltre al nome del proponente e al titolo della proposta progettuale, viene richiesto di identificare principalmente:
+            <ul>
+              <li>l'ambito in cui si colloca il progetto;</li>
+              <li>una descrizione del progetto in cui si prevedano i destinatari, gli obiettivi, i risultati attesi;</li>
+              <li>il tipo di supporto ritenuto necessario (dalla progettazione nel suo complesso, alla richiesta di sostegno economico, alla ricerca di collaboratori, alla pubblicizzazione);</li>
+              <li>il tipo di competenze richieste per costruire un eventuale team di collaboratori;</li>
+              <li>una previsione di tempistica e di fasi del progetto;</li>
+              <li>l'identificazione di eventuali costi (e di chi li sosterr&agrave;);</li>
+              <li>la previsione dei benefici (economici o altro) derivanti dalla realizzazione.</li>
+            </ul>
           </p>
         </div>
         <Footer />
@@ -213,9 +231,9 @@ class Faq extends React.Component {
   }
 }
 
-Faq.propTypes = {
+About.propTypes = {
   location: PropTypes.shape().isRequired,
 };
 
-export default Faq;
+export default About;
 

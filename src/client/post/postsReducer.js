@@ -2,6 +2,7 @@ import _ from 'lodash';
 import * as feedTypes from '../feed/feedActions';
 import * as postsActions from './postActions';
 import * as commentsActions from '../comments/commentsActions';
+import { getPostKey } from '../helpers/stateHelpers';
 
 const postItem = (state = {}, action) => {
   switch (action.type) {
@@ -31,7 +32,9 @@ const posts = (state = initialState, action) => {
     case feedTypes.GET_MORE_USER_COMMENTS.SUCCESS: {
       const commentsMoreList = {};
       action.payload.forEach(comment => {
-        commentsMoreList[comment.id] = comment;
+        // commentsMoreList[comment.post_id] = { id: comment.post_id, ...comment };
+        const key = getPostKey(comment);
+        commentsMoreList[key] = { ...comment, id: key };
       });
       return {
         ...state,
@@ -54,8 +57,11 @@ const posts = (state = initialState, action) => {
       };
 
       _.each(action.payload, post => {
-        list[post.id] = post;
-        postsStates[`${post.author}/${post.permlink}}`] = {
+        // list[post.post_id] = { id: post.post_id, ...post };
+        // postsStates[`${post.author}/${post.permlink}}`] = {
+        const key = getPostKey(post);
+        list[key] = { ...post, id: key };
+        postsStates[key] = {
           fetching: false,
           loaded: true,
           failed: false,
@@ -74,7 +80,8 @@ const posts = (state = initialState, action) => {
         ...state,
         postsStates: {
           ...state.postsStates,
-          [`${action.meta.author}/${action.meta.permlink}}`]: {
+          // [`${action.meta.author}/${action.meta.permlink}}`]: {
+          [getPostKey(action.meta)]: {
             fetching: true,
             loaded: false,
             failed: false,
@@ -82,24 +89,31 @@ const posts = (state = initialState, action) => {
         },
       };
     case postsActions.GET_CONTENT.SUCCESS: {
-      const {
-        reblogged_by: rebloggedBy,
-        first_reblogged_on: firstRebloggedOn,
-        ...newPost
-      } = action.payload;
+      // const {
+      //   reblogged_by: rebloggedBy,
+      //   first_reblogged_on: firstRebloggedOn,
+      //   ...newPost
+      // } = action.payload;
+
+      const key = getPostKey(action.payload);
 
       const baseState = {
         ...state,
         list: {
           ...state.list,
-          [action.payload.id]: {
-            ...state.list[action.payload.id],
-            ...newPost,
+          // [action.payload.id]: {
+          //   ...state.list[action.payload.id],
+          [key]: {
+            ...state.list[key],
+            ...action.payload,
+            // ...newPost,
+            id: key,
           },
         },
         postsStates: {
           ...state.postsStates,
-          [`${action.meta.author}/${action.meta.permlink}}`]: {
+          // [`${action.meta.author}/${action.meta.permlink}}`]: {
+          [getPostKey(action.meta)]: {
             fetching: false,
             loaded: true,
             failed: false,
@@ -109,7 +123,8 @@ const posts = (state = initialState, action) => {
       if (action.meta.afterLike) {
         return {
           ...baseState,
-          pendingLikes: _.omit(state.pendingLikes, action.payload.id),
+          // pendingLikes: _.omit(state.pendingLikes, action.payload.id),
+          pendingLikes: _.omit(state.pendingLikes, getPostKey(action.payload)),
         };
       }
       return baseState;
@@ -119,7 +134,8 @@ const posts = (state = initialState, action) => {
         ...state,
         postsStates: {
           ...state.postsStates,
-          [`${action.meta.author}/${action.meta.permlink}}`]: {
+          // [`${action.meta.author}/${action.meta.permlink}}`]: {
+          [getPostKey(action.meta)]: {
             fetching: false,
             loaded: false,
             failed: true,
